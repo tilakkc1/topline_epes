@@ -68,8 +68,8 @@ include 'header.php'
           <div id="delete_content"></div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id='confirm' onclick="">अगाडी बढ्नुहोस</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">बन्दगर्नुहोस</button>
+          <button type="button" class="btn btn-primary" id='confirm' onclick="">OK</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         </div>
       </div>
     </div>
@@ -83,8 +83,8 @@ include 'header.php'
         <div class="modal-body">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">सेभ गर्नुहोस</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">हटाउनुहोस</button>
+          <button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">Save</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         </div>
       </div>
     </div>
@@ -122,10 +122,8 @@ include 'header.php'
 
 <!-- Main Footer -->
 <footer class="main-footer">
-  <b>भर्जन १.०.०</b>
-  <div class="float-right d-none d-sm-inline-block">
-    Developed By : <strong> <a href="https://toplinetech.com.np">TopLine Technology</a>.</strong>
-  </div>
+  <b>Version 1.1.0</b>
+  
 </footer>
 </div>
 <!-- ./wrapper -->

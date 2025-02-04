@@ -4,7 +4,7 @@
 		<div class="card-header">
 			<?php if($_SESSION['login_type'] == 2): ?>
 				<div class="card-tools">
-					<button class="btn btn-block btn-sm btn-default btn-flat border-primary" id="new_task"><i class="fa fa-plus"></i> नयाँ काम थप</button>
+					<button class="btn btn-block btn-sm btn-default btn-flat border-primary" id="new_task"><i class="fa fa-plus"></i> Add New Task</button>
 				</div>
 			<?php endif; ?>
 		</div>
@@ -14,12 +14,12 @@
 				<thead>
 					<tr>
 						<th class="text-center">#</th>
-						<th width="30%">कामहरु</th>
-						<th>अन्तिम मिति</th>
+						<th width="30%">Tasks</th>
+						<th>Due Date</th>
 						<?php if($_SESSION['login_type'] != 0): ?>
-							<th>काम दिएको व्यक्ति</th>
+							<th>Assign Task User</th>
 						<?php endif; ?>
-						<th>अवस्था</th>
+						<th>Status</th>
 						<th>Action</th>
 					</tr>
 				</thead>
@@ -74,21 +74,21 @@
 									Action
 								</button>
 								<div class="dropdown-menu" style="">
-									<a class="dropdown-item view_task" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">काम हेर्नुहोस</a>
+									<a class="dropdown-item view_task" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">View Task</a>
 									<div class="dropdown-divider"></div>
 									<?php if($_SESSION['login_type'] == 2): ?>
-										<a class="dropdown-item manage_task" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">सम्पादन गर्नुहोस</a>
+										<a class="dropdown-item manage_task" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Edit</a>
 										<div class="dropdown-divider"></div>
-										<a class="dropdown-item delete_task" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">हटाउनुहोस</a>
+										<a class="dropdown-item delete_task" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Delete</a>
 										<div class="dropdown-divider"></div>
 									<?php endif; ?>
 									<?php if($_SESSION['login_type'] == 0): ?>
 										<?php if($row['status'] != 2): ?>
-											<a class="dropdown-item new_progress" data-pid = '<?php echo $row['pid'] ?>' data-tid = '<?php echo $row['id'] ?>'  data-task = '<?php echo ucwords($row['task']) ?>'  href="javascript:void(0)">भईराखेको थप</a>
+											<a class="dropdown-item new_progress" data-pid = '<?php echo $row['pid'] ?>' data-tid = '<?php echo $row['id'] ?>'  data-task = '<?php echo ucwords($row['task']) ?>'  href="javascript:void(0)">Add Pregress</a>
 											<div class="dropdown-divider"></div>
 										<?php endif; ?>
 									<?php endif; ?>
-									<a class="dropdown-item view_progress" data-pid = '<?php echo $row['pid'] ?>' data-tid = '<?php echo $row['id'] ?>'  data-task = '<?php echo ucwords($row['task']) ?>'  href="javascript:void(0)">भईराखेको हेर्नुहोस</a>
+									<a class="dropdown-item view_progress" data-pid = '<?php echo $row['pid'] ?>' data-tid = '<?php echo $row['id'] ?>'  data-task = '<?php echo ucwords($row['task']) ?>'  href="javascript:void(0)">View Progress</a>
 								</div>
 							</td>
 						</tr>	

@@ -2,10 +2,10 @@
     <div class="dropdown">
       <a href="./" class="brand-link d-flex">
         <span class="logo mr-3">
-          <img src="assets/uploads/Nepal.png" style="height: 40px; width: 50px;">
+          <!-- <img src="#assets/uploads/Nepal.png" style="height: 40px; width: 50px;"> -->
         </span>
         <?php if($_SESSION['login_type'] == 2): ?>
-          <h3 class="text-center p-0 m-0 align-self-center"><b>CAO</b></h3>
+          <h3 class="text-center p-0 m-0 align-self-center"><b>Admin</b></h3>
         <?php elseif($_SESSION['login_type'] == 1): ?>
           <h3 class="text-center p-0 m-0 align-self-center"><b>Evaluator</b></h3>
         <?php else: ?>
@@ -22,7 +22,7 @@
           <a href="./" class="nav-link nav-home">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
-              ड्यासबोर्ड
+             Dashboard
             </p>
           </a>
         </li> 
@@ -30,7 +30,7 @@
           <a href="./index.php?page=task_list" class="nav-link nav-task_list">
             <i class="nav-icon fas fa-tasks"></i>
             <p>
-              कामहरु
+             Tasks
             </p>
           </a>
         </li> 
@@ -39,7 +39,7 @@
             <a href="./index.php?page=evaluation" class="nav-link nav-evaluation">
               <i class="nav-icon far fa-edit"></i>
               <p>
-                मूल्याङ्कन
+                Evaluation
               </p>
             </a>
           </li>
@@ -49,7 +49,7 @@
             <a href="./index.php?page=department" class="nav-link nav-department">
               <i class="nav-icon fas fa-th-list"></i>
               <p>
-                शाखाहरु
+                Department
               </p>
             </a>
           </li> 
@@ -57,7 +57,7 @@
             <a href="./index.php?page=designation" class="nav-link nav-designation">
               <i class="nav-icon fas fa-list-alt"></i>
               <p>
-                पदहरु
+              Designation
               </p>
             </a>
           </li> 
@@ -65,7 +65,7 @@
             <a href="#" class="nav-link nav-edit_employee">
               <i class="nav-icon fas fa-user-friends"></i>
               <p>
-                कर्मचारीहरु
+                Employee
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -73,13 +73,13 @@
               <li class="nav-item">
                 <a href="./index.php?page=new_employee" class="nav-link nav-new_employee tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
-                  <p>नयाँ थप्न</p>
+                  <p>Add New</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index.php?page=employee_list" class="nav-link nav-employee_list tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
-                  <p>सबै हेर्न</p>
+                  <p>View All</p>
                 </a>
               </li>
             </ul>
@@ -88,7 +88,7 @@
             <a href="#" class="nav-link nav-edit_evaluator">
               <i class="nav-icon fas fa-user-secret"></i>
               <p>
-                मूल्याङ्कनकर्ता
+                Evaluator
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -96,13 +96,13 @@
               <li class="nav-item">
                 <a href="./index.php?page=new_evaluator" class="nav-link nav-new_evaluator tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
-                  <p>नयाँ थप्न</p>
+                  <p>Add New</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index.php?page=evaluator_list" class="nav-link nav-evaluator_list tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
-                  <p>सबै हेर्न</p>
+                  <p>View All</p>
                 </a>
               </li>
             </ul>
@@ -111,7 +111,7 @@
             <a href="#" class="nav-link nav-edit_user">
               <i class="nav-icon fas fa-users"></i>
               <p>
-                प्रयोगकर्ता
+                User
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -119,13 +119,13 @@
               <li class="nav-item">
                 <a href="./index.php?page=new_user" class="nav-link nav-new_user tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
-                  <p>नयाँ थप्न</p>
+                  <p>Add New</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index.php?page=user_list" class="nav-link nav-user_list tree-item">
                   <i class="fas fa-angle-right nav-icon"></i>
-                  <p>सबै हेर्न</p>
+                  <p>View All</p>
                 </a>
               </li>
             </ul>

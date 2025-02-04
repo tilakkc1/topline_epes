@@ -20,7 +20,7 @@ if(isset($_SESSION['login_id']))
 ?>
 <?php include 'header.php' ?>
 <body class="hold-transition login-page bg-black">
-  <h2><b><?php echo $_SESSION['system']['name'] ?> - Admin</b></h2>
+  <h2><b>Login to HRM System</b></h2>
   <div class="login-box">
     <div class="login-logo">
       <a href="#" class="text-white"></a>

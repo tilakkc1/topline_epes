@@ -8,7 +8,7 @@
       </li>
     <?php endif; ?>
     <li>
-      <a class="nav-link text-white"  href="./" role="button"> <large><b>कर्मचारी कार्यसम्पादन मूल्याङ्कन प्रणाली</b></large></a>
+      <a class="nav-link text-white"  href="./" role="button"> <large><b>HRM System</b></large></a>
     </li>
   </ul>
 
